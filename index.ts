@@ -1,5 +1,5 @@
-import { Shloka } from "./Shloka";
-import { collection } from "./utils";
+import { Shloka } from "./src/Shloka";
+import { collection } from "./src/utils";
 export type ShlokaDict = {
   adhyaya: Number;
   shloka: Number;

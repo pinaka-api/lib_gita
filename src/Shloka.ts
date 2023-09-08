@@ -1,4 +1,4 @@
-import { ShlokaDict } from ".";
+import { ShlokaDict } from "..";
 
 export class Shloka {
   adhyaya: Number;
