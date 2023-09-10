@@ -1,5 +1,6 @@
 import { Shloka } from "./src/Shloka";
 import { collection } from "./src/utils";
+
 export type ShlokaDict = {
   adhyaya: Number;
   shloka: Number;
@@ -31,4 +32,6 @@ export function getShloka(adhyaya: number, shloka: number): Shloka | null {
   return slk || null;
 }
 
-console.log(getShloka(1, 1)?.dict());
+export function getAdhyaya(adhyaya: number): Adhyaya | null {
+  return (collection[adhyaya as keyof typeof collection] as Adhyaya) || null;
+}
