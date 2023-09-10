@@ -9,8 +9,7 @@ export class Shloka {
     public romanised: String,
     public hindi: String,
     public english: String,
-  ) {
-  }
+  ) {}
   dict(): ShlokaDict {
     return {
       adhyaya: this.adhyaya,
